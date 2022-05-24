@@ -138,10 +138,13 @@ add_action( 'widgets_init', 'gaming_doug_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gaming_doug_scripts() {
-	wp_enqueue_style( 'gaming-doug-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'gaming-doug-style', 'rtl', 'replace' );
+	//wp_enqueue_style( 'gaming-doug-style', get_stylesheet_uri(), array(), _S_VERSION );
+	//wp_style_add_data( 'gaming-doug-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'gaming-doug-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	//wp_enqueue_script( 'gaming-doug-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script('gaming-scrip',get_template_directory_uri().'/public/build/index.js', array(), '1.0.0', true);
+	wp_enqueue_style('gaming-style', get_template_directory_uri().'/public/build/index.css',array(),'1.0.0');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
