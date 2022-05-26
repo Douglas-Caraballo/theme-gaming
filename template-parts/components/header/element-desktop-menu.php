@@ -1,5 +1,5 @@
-<div>
-    <div>
+<div class="header-menu">
+    <div class="menu-nav">
         <?php
             $args = [
                 'menu'=> 'Menu 1',
@@ -9,7 +9,7 @@
 
             wp_nav_menu($args);
         ?>
-        <ul>
+        <ul class="nav-menu-desktop">
             <li>
                 <?php get_template_part('template-parts/components/header/element-search', 'desktop'); ?>
             </li>

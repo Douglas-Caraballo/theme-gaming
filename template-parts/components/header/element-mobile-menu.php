@@ -1,4 +1,4 @@
-<aside class="aside-menu" id="menu-mobile">
+<aside class="aside-menu aside-desactivate" id="menu-mobile">
     <div class="aside-menu__wrapper">
         <span class="aside-menu__wrapper__close" id="close-menu">&times</span>
         <div class="aside-menu__wrapper__mobile-menu">
@@ -11,7 +11,7 @@
                 wp_nav_menu($args);
             ?>
             <div class='aside-menu__wrapper__mobile-menu__list'>
-                <?php get_template_part('template-parts/components/reusble/element', 'search'); ?>
+                <?php get_template_part('template-parts/components/reusable/element', 'search'); ?>
             </div>
         </div>
     </div>
