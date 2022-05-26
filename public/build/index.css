@@ -13,6 +13,10 @@ ul{
     background-color: #262626;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+}
+.menu-nav{
+    display: none;
 }
 .container-hamburger__menu{
         display: block;
@@ -70,6 +74,29 @@ ul{
                         color: #fff;
                         font-weight: bold;
                     }
+.aside-menu__wrapper__mobile-menu__list .search-container{
+                    position: relative;
+                    padding: 1rem;
+                }
+.aside-menu__wrapper__mobile-menu__list .search-container__search-bar{
+                        background: transparent;
+                        color: #fff;
+                        border-radius: 0.85rem;
+                        padding: 0.5rem;
+                        width:100%;
+                        border:1px solid;
+                    }
+.aside-menu__wrapper__mobile-menu__list .search-container__button{
+                        position: absolute;
+                        background: transparent;
+                        border: none;
+                        border-radius: 9999px;
+                        top: 1.5rem;
+                        right: 1.5rem;
+                    }
+.aside-menu__wrapper__mobile-menu__list .search-container__button__img{
+                            width: 1rem;
+                        }
 .aside-desactivate{
     transform: translate(-30rem);
     transition: all 0.5s;

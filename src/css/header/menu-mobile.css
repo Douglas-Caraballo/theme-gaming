@@ -32,6 +32,29 @@
                         font-weight: bold;
                     }
                 }
+                .search-container{
+                    position: relative;
+                    padding: 1rem;
+                    &__search-bar{
+                        background: transparent;
+                        color: #fff;
+                        border-radius: 0.85rem;
+                        padding: 0.5rem;
+                        width:100%;
+                        border:1px solid;
+                    }
+                    &__button{
+                        position: absolute;
+                        background: transparent;
+                        border: none;
+                        border-radius: 9999px;
+                        top: 1.5rem;
+                        right: 1.5rem;
+                        &__img{
+                            width: 1rem;
+                        }
+                    }
+                }
             }
         }
     }
