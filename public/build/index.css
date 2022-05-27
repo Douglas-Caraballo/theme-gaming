@@ -18,6 +18,21 @@ ul{
 .menu-nav{
     display: none;
 }
+@media only screen and (min-width: 1020px){
+    .menu-nav{
+        display: flex;
+        gap: 1rem;
+    }
+        .menu-nav .nav-menu-desktop{
+            display: flex;
+            gap: 1rem;
+        }
+                .menu-nav .nav-menu-desktop li a{
+                    color:#fff;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+}
 .container-hamburger__menu{
         display: block;
         cursor: pointer;
