@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/fullscreen-search.js":
+/*!*************************************!*\
+  !*** ./src/js/fullscreen-search.js ***!
+  \*************************************/
+/***/ (() => {
+
+eval("function openSearch(){\n    document.getElementById('my-search').style.display=\"block\";\n    document.body.classList.toggle('scroll-desactivate');\n}\n\nfunction closeSearch(){\n    document.getElementById('my-search').style.display=\"none\";\n    document.body.classList.toggle('scroll-desactivate');\n}\n\nlet openBtn = document.querySelector('.open-search');\nlet closeBtn = document.querySelector('.overlay__close-search');\n\nif(openBtn){\n    openBtn.addEventListener('click', ()=>{\n        openSearch();\n    });\n}\n\nif(closeBtn){\n    closeBtn.addEventListener('click', ()=>{\n        closeSearch();\n    });\n}\n\n//# sourceURL=webpack://underscores/./src/js/fullscreen-search.js?");
+
+/***/ }),
+
 /***/ "./src/js/hambuger.js":
 /*!****************************!*\
   !*** ./src/js/hambuger.js ***!
@@ -26,7 +36,7 @@ eval("const hamburger = document.querySelector('#hamburger'),\n    menu = docume
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hambuger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hambuger */ \"./src/js/hambuger.js\");\n/* harmony import */ var _hambuger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hambuger__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack://underscores/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hambuger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hambuger */ \"./src/js/hambuger.js\");\n/* harmony import */ var _hambuger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hambuger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fullscreen_search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fullscreen-search */ \"./src/js/fullscreen-search.js\");\n/* harmony import */ var _fullscreen_search__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fullscreen_search__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://underscores/./src/js/index.js?");
 
 /***/ })
 
