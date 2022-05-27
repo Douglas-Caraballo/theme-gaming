@@ -1,5 +1,5 @@
 .site-header{
-    background-color: #262626;
+    background-color: #1f104f;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -9,6 +9,11 @@
 }
 
 @media only screen and (min-width: 1020px){
+    .site-header{
+        .theme-logo{
+            width: 6rem;
+        }
+    }
     .menu-nav{
         display: flex;
         gap: 1rem;
@@ -16,10 +21,29 @@
             display: flex;
             gap: 1rem;
             li{
+                height: 100%;
+                transition: all 0.7s;
+                padding: 0 0.5rem;
                 a{
                     color:#fff;
                     font-size: 1rem;
                     font-weight: bold;
+                    line-height: 6rem;
+                    display:flex;
+                    justify-content:center;
+                }
+            }
+            li:hover{
+                background-color: #0b0413;
+            }
+            .open-search{
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                line-height: 6rem;
+                width: 2rem;
+                img{
+                    width: 1rem;
                 }
             }
         }

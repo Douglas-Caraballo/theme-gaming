@@ -9,8 +9,20 @@ a{
 ul{
     list-style: none;
 }
+@media only screen and (min-width: 1020px){
+    .wrapper-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .site{
+        max-width: 70%;
+        margin: 2rem 0;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+}
 .site-header{
-    background-color: #262626;
+    background-color: #1f104f;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -19,6 +31,9 @@ ul{
     display: none;
 }
 @media only screen and (min-width: 1020px){
+        .site-header .theme-logo{
+            width: 6rem;
+        }
     .menu-nav{
         display: flex;
         gap: 1rem;
@@ -27,10 +42,31 @@ ul{
             display: flex;
             gap: 1rem;
         }
+            .menu-nav .nav-menu-desktop li{
+                height: 100%;
+                transition: all 0.7s;
+                padding: 0 0.5rem;
+            }
                 .menu-nav .nav-menu-desktop li a{
                     color:#fff;
                     font-size: 1rem;
                     font-weight: bold;
+                    line-height: 6rem;
+                    display:flex;
+                    justify-content:center;
+                }
+            .menu-nav .nav-menu-desktop li:hover{
+                background-color: #0b0413;
+            }
+            .menu-nav .nav-menu-desktop .open-search{
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                line-height: 6rem;
+                width: 2rem;
+            }
+                .menu-nav .nav-menu-desktop .open-search img{
+                    width: 1rem;
                 }
 }
 .container-hamburger__menu{
