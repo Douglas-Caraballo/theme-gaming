@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/channel-change.js":
+/*!**********************************!*\
+  !*** ./src/js/channel-change.js ***!
+  \**********************************/
+/***/ (() => {
+
+eval("let iframe = document.querySelector('.embed-twitch iframe');\nlet channels = document.querySelector('#channels');\nconst source = \"https://player.twitch.tv/?channel=\";\nconst parent =\"&parent=localhost\";\n\nif(iframe){\n    channels.addEventListener('change', (e)=>{\n        iframe.setAttribute('src', source+channels.value+parent)\n    })\n}\n\n\n//# sourceURL=webpack://underscores/./src/js/channel-change.js?");
+
+/***/ }),
+
 /***/ "./src/js/fullscreen-search.js":
 /*!*************************************!*\
   !*** ./src/js/fullscreen-search.js ***!
@@ -36,7 +46,7 @@ eval("const hamburger = document.querySelector('#hamburger'),\n    menu = docume
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hambuger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hambuger */ \"./src/js/hambuger.js\");\n/* harmony import */ var _hambuger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hambuger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fullscreen_search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fullscreen-search */ \"./src/js/fullscreen-search.js\");\n/* harmony import */ var _fullscreen_search__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fullscreen_search__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://underscores/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hambuger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hambuger */ \"./src/js/hambuger.js\");\n/* harmony import */ var _hambuger__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_hambuger__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fullscreen_search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fullscreen-search */ \"./src/js/fullscreen-search.js\");\n/* harmony import */ var _fullscreen_search__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_fullscreen_search__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _channel_change__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./channel-change */ \"./src/js/channel-change.js\");\n/* harmony import */ var _channel_change__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_channel_change__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack://underscores/./src/js/index.js?");
 
 /***/ })
 
