@@ -15,7 +15,7 @@
   \**********************************/
 /***/ (() => {
 
-eval("let iframe = document.querySelector('.embed-twitch iframe');\nlet channels = document.querySelector('#channels');\nconst source = \"https://player.twitch.tv/?channel=\";\nconst parent =\"&parent=localhost\";\n\nif(iframe){\n    channels.addEventListener('change', (e)=>{\n        iframe.setAttribute('src', source+channels.value+parent)\n    })\n}\n\n\n//# sourceURL=webpack://underscores/./src/js/channel-change.js?");
+eval("let iframe = document.querySelector('.wrapper-transmition__embed-twitch iframe');\nlet channels = document.querySelector('#channels');\nconst source = \"https://player.twitch.tv/?channel=\";\nconst parent =\"&parent=localhost\";\n\nif(iframe){\n    channels.addEventListener('change', (e)=>{\n        iframe.setAttribute('src', source+channels.value+parent)\n    })\n}\n\n\n//# sourceURL=webpack://underscores/./src/js/channel-change.js?");
 
 /***/ }),
 

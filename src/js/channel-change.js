@@ -1,4 +1,4 @@
-let iframe = document.querySelector('.embed-twitch iframe');
+let iframe = document.querySelector('.wrapper-transmition__embed-twitch iframe');
 let channels = document.querySelector('#channels');
 const source = "https://player.twitch.tv/?channel=";
 const parent ="&parent=localhost";
