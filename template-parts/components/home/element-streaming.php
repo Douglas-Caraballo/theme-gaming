@@ -6,7 +6,7 @@
     <div class="wrapper-transmition__select-channel">
         <select class="wrapper-transmition__select-channel__channels" name="channels" id="channels">
             <optgroup label="Canales de Twitch">
-                <option value="0">Canales</option>
+                <option selected disabled>Canales</option>
                 <option value="reventxz">RevenT</option>
                 <option value="lla">lla</option>
                 <option value="auronplay">Auronplay</option>
