@@ -182,5 +182,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Register the taxonomies
  */
-
 require get_template_directory(). '/inc/taxonomies.php';
