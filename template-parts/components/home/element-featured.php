@@ -30,8 +30,8 @@
                     <?php the_post_thumbnail('',['class'=>'featured-ing']);?>
                 </figure>
                 <div class="featured-item__details">
-                    <?php the_title('<h3 class=""><a href='.get_the_permalink().'>','</a></h3>') ?>
-                    <span><a href="<?= esc_url(get_permalink($query_featured->id));?>">Ver post</a></span>
+                    <?php the_title('<h3 class="featured-item__details__title"><a href='.get_the_permalink().'>','</a></h3>') ?>
+                    <span class="featured-item__details__redirect"><h6><a href="<?= esc_url(get_permalink($query_featured->id));?>">Ver post</a></h6></span>
                 </div>
             </article>
             <?php endwhile; ?>
