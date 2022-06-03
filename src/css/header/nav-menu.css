@@ -1,8 +1,12 @@
 .site-header{
-    background-color: #1f104f;
+    background-color: #1b0f23;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    z-index: 2;
 }
 .menu-nav{
     display: none;
@@ -24,6 +28,7 @@
                 height: 100%;
                 transition: all 0.7s;
                 padding: 0 0.5rem;
+                position: relative;
                 a{
                     color:#fff;
                     font-size: 1rem;
@@ -33,8 +38,21 @@
                     justify-content:center;
                 }
             }
-            li:hover{
-                background-color: #0b0413;
+            .menu-item::after{
+                content: '';
+                position: absolute;
+                bottom: 1rem;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 4px;
+                background-color: #7228e2;
+                transform-origin: left;
+                transform: scaleX(0);
+                transition: 0.5s cubic-bezier(.47,.11,0,.96);
+            }
+            .menu-item:hover::after{
+                transform: scaleX(1);
             }
             .open-search{
                 background-color: transparent;

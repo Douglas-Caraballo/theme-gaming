@@ -1,5 +1,9 @@
 .wrapper-body{
+    background-image: url('https://i.postimg.cc/28Zqd5G2/main-home-bckgd-img.jpg');
     background-color: #4b3f72;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 *{
     margin: 0;

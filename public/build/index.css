@@ -1,5 +1,9 @@
 .wrapper-body{
+    background-image: url('https://i.postimg.cc/28Zqd5G2/main-home-bckgd-img.jpg');
     background-color: #4b3f72;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 *{
     margin: 0;
@@ -25,10 +29,15 @@ ul{
     }
 }
 .site-header{
-    background-color: #1f104f;
+    background-color: #1b0f23;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    z-index: 2;
 }
 .menu-nav{
     display: none;
@@ -49,6 +58,7 @@ ul{
                 height: 100%;
                 transition: all 0.7s;
                 padding: 0 0.5rem;
+                position: relative;
             }
                 .menu-nav .nav-menu-desktop li a{
                     color:#fff;
@@ -58,8 +68,21 @@ ul{
                     display:flex;
                     justify-content:center;
                 }
-            .menu-nav .nav-menu-desktop li:hover{
-                background-color: #0b0413;
+            .menu-nav .nav-menu-desktop .menu-item::after{
+                content: '';
+                position: absolute;
+                bottom: 1rem;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 4px;
+                background-color: #7228e2;
+                transform-origin: left;
+                transform: scaleX(0);
+                transition: 0.5s cubic-bezier(.47,.11,0,.96);
+            }
+            .menu-nav .nav-menu-desktop .menu-item:hover::after{
+                transform: scaleX(1);
             }
             .menu-nav .nav-menu-desktop .open-search{
                 background-color: transparent;
