@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 module.exports = {
     //mode: ""
     entry: {
@@ -11,5 +12,9 @@ module.exports = {
     module: {
     rules: []
     },
-    plugins: []
+    plugins: [
+        new webpack.ProvidePlugin({
+            process: 'process/browser',
+        }),
+    ],
 }
