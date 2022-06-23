@@ -146,6 +146,11 @@ function gaming_doug_scripts() {
 	wp_enqueue_script('gaming-scrip',get_template_directory_uri().'/public/build/index.js', array(), '1.0.0', true);
 	wp_enqueue_style('gaming-style', get_template_directory_uri().'/public/build/index.css',array(),'1.0.0');
 
+	wp_localize_script('gaming-scrip', 'requestListPostVar', array(
+		'url' => rest_url('post/posts'),
+		'nonce' => wp_create_nonce('wp_rest'),
+	));
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -183,6 +188,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Register the taxonomies
  */
 require get_template_directory(). '/inc/taxonomies.php';
+
+/**
+ * Register endpoint
+ */
+require get_template_directory(). '/inc/endpoint.php';
 
 //------------------------Funcion api lol ---------------------------//
 
