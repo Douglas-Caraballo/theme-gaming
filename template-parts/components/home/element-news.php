@@ -27,22 +27,20 @@
                     </div>
                     <div class="news-item__detalist">
                         <span>
-                            <h5>
-                                <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
-                                    <?php the_author();?>
-                                </a>
-                            </h5>
+                            <h5 class="news-item__detalist__author"><?php the_author();?></h5>
                         </span>
                         &#47;
-                        <span><?php the_date('M d, Y','<h5>','</h5>'); ?></span>
+                        <span><?php the_date('M d, Y','<h5 class="news-item__detalist__date">','</h5>'); ?></span>
                     </div>
                     <div class="news-item__read-more">
-                        <?php the_excerpt(); ?>
-                        <a href="<?= esc_url(get_the_permalink($queryPost->id)); ?>"> Leer Mas >> </a>
+                        <div class="news-item__read-more__excerpt">
+                            <?php the_excerpt(); ?>
+                        </div>
+                        <a class="news-item__read-more__more" href="<?= esc_url(get_the_permalink($queryPost->id)); ?>"> Leer Mas >> </a>
                     </div>
                 </article>
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
-    ver mas
+    <?php get_template_part('template-parts/components/reusable/element-load','more'); ?>
 </div>
