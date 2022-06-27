@@ -6,5 +6,6 @@
 <div>
     <?php
         get_template_part('template-parts/components/home/element','news');
+        get_template_part('template-parts/components/home/element-widget-area','home');
     ?>
 </div>

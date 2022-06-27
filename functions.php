@@ -194,6 +194,10 @@ require get_template_directory(). '/inc/taxonomies.php';
  */
 require get_template_directory(). '/inc/endpoint.php';
 
+/**
+ * Register widgets areas
+ */
+require get_template_directory(). '/inc/widgets-area.php';
 //------------------------Funcion api lol ---------------------------//
 
 wp_enqueue_script('api_lol_conect', get_template_directory_uri().'/src/js/esports.js', array(), '1.0', true);
