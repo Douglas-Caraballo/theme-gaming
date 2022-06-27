@@ -62,6 +62,12 @@
             font-size: 0.8rem;
             transition: all 0.7s;
         }
+        &__excerpt > p{
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
     }
 }
 .buton-more, .buton-more::after{
@@ -97,12 +103,15 @@
     clip-path: var(--slice-0);
 }
 @media only screen and (min-width: 1020px){
+    .wrapper-news{
+        width: 75%;
+    }
     .content-news{
         flex-direction: row;
         flex-wrap: wrap;
     }
     .news-item{
-        width: 49%;
+        width: 48%;
         &__wrapper-title{
             &__title{
                 &:hover{
