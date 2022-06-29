@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div>
+		<div class="content-footer">
 			<?php get_template_part('template-parts/content-footer'); ?>
 		</div>
 		<div class="site-info">
