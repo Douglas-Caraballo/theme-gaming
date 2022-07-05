@@ -10,6 +10,5 @@
     ?>
 </div>
 <div>
-    <span><h2>Esport</h2></span>
     <?php get_template_part('template-parts/components/home/element','esport'); ?>
 </div>
