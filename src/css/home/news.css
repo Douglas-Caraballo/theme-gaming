@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.8s;
 }
 .wrapper-news{
     display: flex;
@@ -131,6 +132,7 @@
     .content-news{
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .news-item{
         width: 48%;
