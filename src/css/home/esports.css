@@ -36,6 +36,7 @@
             }
             &__excerp{
                 padding: 0 1rem;
+                font-size: 0.9rem;
             }
             &__excerp > p{
                 display: -webkit-box;
@@ -53,7 +54,7 @@
                 font-weight: bold;
                 clip-path: polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
                 position: relative;
-                transition: all 0.5s;
+                transition: all 0.7s;
             }
             &__more::after{
                 --slice-0: inset(50% 50% 50% 50%);
