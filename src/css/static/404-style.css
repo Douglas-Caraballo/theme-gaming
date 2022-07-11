@@ -1,0 +1,79 @@
+.wrapper-404{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+}
+.figure-404{
+    width: 50%;
+    height: 20rem;
+    &__image{
+        width: 100%;
+        height: 100%;
+    }
+}
+.content-404{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    &__menssage{
+        font-size: 2rem;
+    }
+    &__redirect{
+        width: max-content;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+        border-radius: 0.3rem;
+        box-shadow: 5px 0px 0px #00e6f6;
+        font-weight: bold;
+        transition: all 0.7s;
+        position: relative;
+        letter-spacing: 3px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 1.12rem;
+        animation: bounce 2s infinite;
+    }
+    &__redirect::after{
+        --slice-0: inset(50% 50% 50% 50%);
+        --slice-1: inset(80% -6px 0 0);
+        --slice-2: inset(50% -6px 30% 0);
+        --slice-3: inset(10% -6px 85% 0);
+        --slice-4: inset(40% -6px 43% 0);
+        --slice-5: inset(80% -6px 5% 0);
+        content: "Inicio";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+        text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+        clip-path: var(--slice-0);
+    }
+
+}
+@media only screen and (min-width: 1020px){
+    .figure-404{
+        height: 22rem;
+    }
+    .content-404{
+        &__redirect:hover::after{
+            animation: 1s glitch;
+            animation-timing-function: steps(2, end);
+        }
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
