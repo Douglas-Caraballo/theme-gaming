@@ -203,6 +203,11 @@ require get_template_directory(). '/inc/widgets-area.php';
  * Register custom post types
  */
 require get_template_directory(). '/inc/custom-post-types.php';
+
+/**
+ * Register pagination the archive
+ */
+require get_template_directory(). '/inc/pagination.php';
 //------------------------Funcion api lol ---------------------------//
 
 wp_enqueue_script('api_lol_conect', get_template_directory_uri().'/src/js/esports.js', array(), '1.0', true);
