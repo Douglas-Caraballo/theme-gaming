@@ -6,27 +6,35 @@
     the_archive_description( '<div class="archive-description">', '</div>' );
     ?>
 </header><!-- .page-header -->
-<div class="wrapper-archive">
-    <?php
-        /* Start the Loop */
-        while ( have_posts() ) :
-            the_post();
+<div class="content-archive">
+    <div class="general-archive">
+        <div class="wrapper-archive">
+            <?php
+                /* Start the Loop */
+                while ( have_posts() ) :
+                    the_post();
 
-            /*
-            * Include the Post-Type-specific template for the content.
-            * If you want to override this in a child theme, then include a file
-            * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-            */
-            get_template_part('template-parts/components/archive/element', 'archive');
+                    /*
+                    * Include the Post-Type-specific template for the content.
+                    * If you want to override this in a child theme, then include a file
+                    * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+                    */
+                    get_template_part('template-parts/components/archive/element', 'archive');
 
-        endwhile;
+                endwhile;
 
-        gaming_doug_numeric_pagination();
+                else :
 
-        else :
+                get_template_part( 'template-parts/content', 'none' );
 
-        get_template_part( 'template-parts/content', 'none' );
-
-        endif;
-    ?>
+                endif;
+            ?>
+        </div>
+        <div >
+            <?php gaming_doug_numeric_pagination(); ?>
+        </div>
+    </div>
+    <div class="archive-sidebar">
+        <?php get_sidebar(); ?>
+    </div>
 </div>
