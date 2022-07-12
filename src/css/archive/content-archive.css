@@ -55,6 +55,7 @@
         gap: 1rem;
         &__title{
             text-align: center;
+            transition: all 0.7s;
             a{
                 color: #fff;
             }
@@ -67,6 +68,7 @@
             &__author{
                 a{
                     color: #fff;
+                    transition: all 0.5s;
                 }
                 h5::after{
                     content: " /";
@@ -126,6 +128,18 @@
     .archive-item{
         width: 48%;
         &__content{
+            &__title{
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            &__info{
+                &__author{
+                    a:hover{
+                        color: #7228e2;
+                    }
+                }
+            }
             &__description{
                 a:hover::after{
                     animation: 1s glitch;
