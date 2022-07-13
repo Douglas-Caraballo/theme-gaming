@@ -27,7 +27,8 @@ function my_custom_post_esports() {
         'has_archive'        => true,
         'show_in_rest'       => true,
         'menu_icon'          => 'dashicons-games',
-        //'rewrite'            => array('slug' => 'opinion-post'),
+        //'rewrite'            => array('slug' => 'esports'),
+        'taxonomies'         => array( 'cat_esports' ),
         //'capability_type'    => ['opinion', 'opiniones'],
         'map_meta_cap'       => true,
     );
