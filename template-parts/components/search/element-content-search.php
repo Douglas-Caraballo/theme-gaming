@@ -5,15 +5,15 @@
     </figure>
     <div class="search-item__content">
         <div class="search-item__content__date">
-            <span><h5><?php the_date('D m, Y'); ?></h5></span>
+            <span><h5><?php the_time('M d, Y'); ?></h5></span>
             <span><h5><?php the_author(); ?></h5></span>
         </div>
         <div class="search-item__content__excerpt">
             <?php the_excerpt(); ?>
         </div>
-        <div class="search-item__content__redirect">
-            <a href="<?= esc_url(get_permalink()); ?>">Ver</a>
-        </div>
         <span class="search-item__content__footer"><h6><?php gaming_doug_entry_footer();?></h6></span>
+        <div class="search-item__content__redirect">
+            <a href="<?= esc_url(get_permalink()); ?>">Leer</a>
+        </div>
     </div>
 </article>

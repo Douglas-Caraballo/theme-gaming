@@ -22,33 +22,37 @@ get_header();
 					?>
 				</h1>
 			</header><!-- .page-header -->
-			<div>
-				<?php
-					/* Start the Loop */
-					while ( have_posts() ) :
-						the_post();
+			<div class="search-content">
+				<div class="search-page-content">
+					<?php
+						/* Start the Loop */
+						while ( have_posts() ) :
+							the_post();
 
-						/**
-						 * Run the loop for the search to output the results.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-search.php and that will be used instead.
-						 */
-						get_template_part( 'template-parts/content', 'search' );
+							/**
+							 * Run the loop for the search to output the results.
+							 * If you want to overload this in a child theme then include a file
+							 * called content-search.php and that will be used instead.
+							 */
+							get_template_part( 'template-parts/content', 'search' );
 
-					endwhile;
+						endwhile;
 
-					the_posts_navigation();
+						the_posts_navigation();
 
-					else :
+						else :
 
-						get_template_part( 'template-parts/content', 'none' );
+							get_template_part( 'template-parts/content', 'none' );
 
-					endif;
-				?>
+						endif;
+					?>
+				</div>
+				<div class="archive-sidebar">
+					<?php get_sidebar(); ?>
+				</div>
 			</div>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
