@@ -30,7 +30,7 @@
                             <h5 class="news-item__detalist__author"><?php the_author();?></h5>
                         </span>
                         &#47;
-                        <span><?php the_date('M d, Y','<h5 class="news-item__detalist__date">','</h5>'); ?></span>
+                        <span><h5 class="news-item__detalist__date"><?php the_time('M d, Y'); ?></h5></span>
                     </div>
                     <div class="news-item__read-more">
                         <div class="news-item__read-more__excerpt">

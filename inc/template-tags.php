@@ -63,14 +63,14 @@ if ( ! function_exists( 'gaming_doug_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'gaming-doug' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'gaming-doug' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="cat-links">' . esc_html__( 'Posteado en %1$s / ', 'gaming-doug' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'gaming-doug' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'gaming-doug' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="tags-links">' . esc_html__( 'Tags: %1$s / ', 'gaming-doug' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 
@@ -80,7 +80,7 @@ if ( ! function_exists( 'gaming_doug_entry_footer' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'gaming-doug' ),
+						__( 'Deja un comentario <span class="screen-reader-text"> on %s</span>', 'gaming-doug' ),
 						array(
 							'span' => array(
 								'class' => array(),
