@@ -50,9 +50,14 @@ get_header();
 							<?php gaming_doug_numeric_pagination(); ?>
 					</div>
 				</div>
-				<div class="archive-sidebar">
-					<?php get_sidebar(); ?>
-				</div>
+				<?php
+					if ( have_posts() ){ ?>
+						<div class="archive-sidebar">
+							<?php get_sidebar(); ?>
+						</div>
+				<?php
+					}
+				?>
 			</div>
 
 	</main><!-- #main -->

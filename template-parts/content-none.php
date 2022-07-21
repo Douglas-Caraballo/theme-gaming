@@ -15,37 +15,12 @@
 	</header><!-- .page-header -->
 
 	<div class="page-content">
-		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) :
-
-			printf(
-				'<p>' . wp_kses(
-					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'gaming-doug' ),
-					array(
-						'a' => array(
-							'href' => array(),
-						),
-					)
-				) . '</p>',
-				esc_url( admin_url( 'post-new.php' ) )
-			);
-
-		elseif ( is_search() ) :
-			?>
-
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'gaming-doug' ); ?></p>
-			<?php
-			get_search_form();
-
-		else :
-			?>
-
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'gaming-doug' ); ?></p>
-			<?php
-			get_search_form();
-
-		endif;
-		?>
+		<div class="no-results-content">
+			<p class="no-results-content__information"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'noticias-d' ); ?></p>
+			<?php get_template_part('template-parts/components/reusable/element', 'search'); ?>
+		</div>
+		<div class="archive-sidebar">
+			<?php get_sidebar(); ?>
+		</div>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
