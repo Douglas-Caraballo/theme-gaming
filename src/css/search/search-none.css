@@ -18,6 +18,10 @@
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    &__figure{
+        font-size: 2rem;
+        font-weight: bold;
+    }
     &__information{
         text-align: center;
         font-weight: bold;

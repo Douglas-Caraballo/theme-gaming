@@ -16,6 +16,7 @@
 
 	<div class="page-content">
 		<div class="no-results-content">
+			<p class="no-results-content__figure">O_o?</p>
 			<p class="no-results-content__information"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'noticias-d' ); ?></p>
 			<?php get_template_part('template-parts/components/reusable/element', 'search'); ?>
 		</div>
