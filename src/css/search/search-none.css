@@ -21,6 +21,7 @@
     &__figure{
         font-size: 2rem;
         font-weight: bold;
+        font-style: italic;
     }
     &__information{
         text-align: center;

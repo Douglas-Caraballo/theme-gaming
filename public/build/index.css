@@ -1313,6 +1313,11 @@ ul{
     gap: 1rem;
     align-items: center;
 }
+.no-results-content__figure{
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
 .no-results-content__information{
         text-align: center;
         font-weight: bold;
