@@ -1,0 +1,51 @@
+.content-single{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.single{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #1b0f23;
+    &__figure{
+        width: 100%;
+        height: 15rem;
+    }
+    &__information{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: justify;
+        padding: 0 1rem;
+    }
+}
+.single-thumbnail{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1020px){
+    .content-single{
+        flex-direction: row;
+        &__wrapper{
+            width: 70%;
+        }
+        &__widgets{
+            width: 30%;
+        }
+    }
+    .single{
+        &__figure{
+            height: 100%;
+        }
+    }
+}
