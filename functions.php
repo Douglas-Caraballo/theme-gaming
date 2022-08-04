@@ -208,6 +208,11 @@ require get_template_directory(). '/inc/custom-post-types.php';
  * Register pagination the archive
  */
 require get_template_directory(). '/inc/pagination.php';
+
+/**
+ * Register navigation post in the single page
+ */
+require get_template_directory(). '/inc/navigation-post.php';
 //------------------------Funcion api lol ---------------------------//
 
 wp_enqueue_script('api_lol_conect', get_template_directory_uri().'/src/js/esports.js', array(), '1.0', true);
