@@ -111,11 +111,15 @@
 @media only screen and (min-width: 1020px){
     .content-single{
         flex-direction: row;
+        padding: 0 1rem;
         &__wrapper{
             width: 70%;
         }
         &__widgets{
             width: 30%;
+            position: sticky;
+            top: 1rem;
+            height: 100%;
         }
     }
     .single{

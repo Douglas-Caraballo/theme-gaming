@@ -1467,12 +1467,17 @@ ul{
 @media only screen and (min-width: 1020px){
     .content-single{
         flex-direction: row;
+        padding: 0 1rem;
     }
         .content-single__wrapper{
             width: 70%;
         }
         .content-single__widgets{
             width: 30%;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 1rem;
+            height: 100%;
         }
             .single__information a:hover{
                 color: #6b54b6;
@@ -1528,6 +1533,64 @@ ul{
                 }
                     .comments-area .comment-respond .comment-form .form-submit .submit:hover{
                         background-color: #fd3147;
+                    }
+}
+.widget-area-single{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.widget-area-single .widget_block{
+        background-color:  #22152c;
+        box-shadow: 0 10px 27px 0 rgba(14, 8, 18, 0.5);
+        padding: 1rem;
+    }
+.widget-area-single .widget_block h2{
+            position: relative;
+            padding-left:0.5rem;
+        }
+.widget-area-single .widget_block h2::before{
+            position: absolute;
+            top: 5px;
+            left: 0;
+            display: block;
+            content: '';
+            height: calc(100% - 11px);
+            width: 3px;
+            background-color: #6b54b6;
+        }
+.widget-area-single .widget_categories .wp-block-categories{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+.widget-area-single .widget_categories .wp-block-categories .cat-item{
+                transition: all 0.5s;
+            }
+.widget-area-single .widget_categories .wp-block-categories a{
+                color:#fff;
+                transition: all 0.5s;
+            }
+.widget-area-single .widget_tag_cloud .wp-block-tag-cloud{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+.widget-area-single .widget_tag_cloud .wp-block-tag-cloud .tag-cloud-link{
+                color: #fff;
+                font-size:1rem !important;
+                border: 1px solid;
+                padding: 0.3rem;
+                border-radius: 0.3rem;
+            }
+@media only screen and (min-width: 1020px){
+                .widget-area-single .widget_categories .wp-block-categories .cat-item:hover{
+                    list-style-type: disclosure-closed;
+                    padding: 0 1rem;
+                    color: #7228e2;
+                }
+                    .widget-area-single .widget_categories .wp-block-categories .cat-item:hover a{
+                        color: #7228e2;
                     }
 }
 .navigation-thumbnail{
