@@ -1574,7 +1574,7 @@ ul{
 .widget-area-single .widget_tag_cloud .wp-block-tag-cloud{
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 0.5rem;
         }
 .widget-area-single .widget_tag_cloud .wp-block-tag-cloud .tag-cloud-link{
                 color: #fff;
@@ -1739,6 +1739,64 @@ ul{
                             color:#fd3147;
                         }
 }
+.wp-block-quote cite{
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+.wp-block-table .has-fixed-layout thead tr{
+                border-bottom: 1px solid;
+            }
+.wp-block-table .has-fixed-layout th{
+            padding:0.5rem;
+        }
+.wp-block-table .has-fixed-layout td{
+            padding:0.5rem;
+        }
+.wp-block-table figcaption{
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-align: center;
+    }
+.wp-block-table.is-style-stripes tbody tr:nth-child(2n+1){
+    background-color: #22152c;
+}
+.wp-block-embed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wp-block-embed figcaption{
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-align: center;
+        font-style: italic;
+    }
+.wp-block-code code{
+        font-style: italic;
+    }
+.single__content ol, .single__content ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-left:2rem;
+    }
+.single__content ul{
+        list-style: disc;
+    }
+.single__content a{
+        color: #fff;
+        font-weight: bold;
+        font-style: italic;
+    }
+.wp-block-gallery .blocks-gallery-grid{
+        flex-direction: row;
+        padding-left:0;
+        gap:0;
+    }
+.wp-block-embed-reddit .wp-block-embed__wrapper .embedly-card{
+            background-color: #fff;
+            box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.5);
+        }
 .content-footer{
     display: flex;
     flex-direction: column;
