@@ -74,3 +74,9 @@
         }
     }
 }
+.wp-block-verse{
+    font-style: italic;
+}
+.wp-block-media-text{
+    margin: 1rem 0;
+}

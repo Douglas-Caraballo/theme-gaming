@@ -1797,6 +1797,12 @@ ul{
             background-color: #fff;
             box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.5);
         }
+.wp-block-verse{
+    font-style: italic;
+}
+.wp-block-media-text{
+    margin: 1rem 0;
+}
 .content-footer{
     display: flex;
     flex-direction: column;
