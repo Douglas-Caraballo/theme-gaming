@@ -1,3 +1,9 @@
+<?php
+    $terms = get_terms([
+        'taxonomy'=> 'transmision',
+        'hide_empty' => false,
+    ]);
+?>
 <div class="wrapper-transmition">
     <span class="wrapper-transmition__title">En vivo</span>
     <div class="wrapper-transmition__embed-twitch">
@@ -7,9 +13,11 @@
         <select class="wrapper-transmition__select-channel__channels" name="channels" id="channels">
             <optgroup label="Canales de Twitch">
                 <option selected disabled>Canales</option>
-                <option value="reventxz">RevenT</option>
-                <option value="lla">lla</option>
-                <option value="auronplay">Auronplay</option>
+                <?php
+                    foreach($terms as $transmision){
+                        echo '<option value="'.$transmision->slug.'">'.$transmision->name.'</option>';
+                    }
+                ?>
             </optgroup>
         </select>
     </div>
