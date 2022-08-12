@@ -55,7 +55,7 @@
     "deploy": "npm run webpack & npm run build"
   },
   "dependencies": {
-    "poro": "^2.1.2",
+    "poro": "^2.1.3",
     "process": "^0.11.10"
   }
 }
